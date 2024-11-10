@@ -1,6 +1,6 @@
-#(function(){
+$(function(){
     var tabs=$('#features > nav a');
-    var tabsContent =$('#features > articles>article section');
+    var tabsContent =$('#features > article > section');
     tabs.click(function(e){
         e.preventDefault();
 
@@ -12,5 +12,5 @@
         tabsContent
         .filter((i,tab)=>$(tab).data('id')===that.data('id'))
         .addClass('is-selected');
-    })
-})
+    });
+});

@@ -16,7 +16,7 @@ header{
 
 nav img{
     width:167px;
-    height: 45px;
+    height: 40px;
     vertical-align: middle;
 }
 
@@ -76,17 +76,24 @@ nav .signin{
     text-align: center;
     border: 0;
 }
+
+.btn-large{
+    padding: 18px 20px;
+
+}
+
+
 nav .signin:hover,.btn:hover{
     background: #f6212c;
 }
 
 #features > nav{
-    padding-top: 25px;
+    padding-top: 35px;
     background-color: #141414;
     border-bottom: 2px solid #3d3d3d;
 
 }
-#features > nav{
+#features > nav a{
     text-decoration: none;
     text-align: center;
     vertical-align: top;
@@ -104,7 +111,7 @@ color:white;
 }
 
 #features > nav a h2{
-    margin: 8px 0 0;
+    margin: 10px 0 0;
     font-size: 1em;
 }
 .columns{
@@ -116,13 +123,114 @@ color:white;
     flex-grow: 1;
     flex-shrink: 1;
 }
+.column.is-narrow{
+    flex:none;
+}
+
 .center {
     margin: 0 auto;
+}
+.size-90{
+    width: 90%;
 }
 .size-80{
     width: 80%;
 }
+.size-70{
+    width: 70%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#features > nav a.column img{
+    width: 70px;
+    height: 50px;
+}
+#features > nav a.is-selected {
+    border-bottom: 5px solid #e50914;
+    color:white;
+}
+
+#features > article{
+    margin-bottom: 120px;
+}
+
+
+#features > article > section {
+    display:none;
+    padding-left: 40px;
+
+}
+
+#features > article > section.is-selected {
+    display:block;
+}
+
+#features > article h2{
+    font-size: 32px;
+    font-weight: 400;
+    margin: 60px 0 20px;
+    
+
+}
+#features #watchanywhere h2{
+    padding: 30px;
+}
+
 #features img{
-    width: 50px;
-    height: 5px;
+    max-width: 100%;
+}
+
+#features #watchanywhere h2{
+    font-size: 30px;
+    padding-right: 1em;
+    margin:  0 0 20px;
+}
+#features #watchanywhere > div:first-child{
+    margin-bottom: 60px;
+}
+
+#features #watchanywhere p{
+    color:#999;
+}
+
+#features #pickprice h2{
+    font-size: 22px;
+    display: inline;
+    margin: 0 40px 0 0;
+}
+table{
+    width: 100%;
+    margin-top: 20px;
+}
+
+table,thead,tbody{
+    border-collapse: collapse;
+}
+
+thead{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+thead th{
+    padding: 10px;
+}
+tbody{
+    color: #999;
+}
+tbody td{
+    text-align: center;
+    padding: 10px 20px;
+}
+
+tbody tr:nth-child(2n){
+    background-color: #222;
+}
+
+tbody td:first-child{
+    text-align: left;
 }

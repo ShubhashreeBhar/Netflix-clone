@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix India</title>
     <link href="style.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -23,37 +24,109 @@
             <button class="btn">JOIN FREE FOR A MONTH</button>
         </section>
     </header>
+
     <div id="features">
         <nav>
-            <div class ="center columns size-80">
-                <a  class="column is-selected" data-id="cancelanytime">
-                    <img alt="CANCEL ANYTIME" src="img/commitment.png">
-                    <h2>
-                        No Commitments
-                    
-                    <br/>
-                        Cancel online at anytime
-                    </h2>
+            <div class="center columns size-80">
+                <a href="#" class="column is-selected" data-id="cancelanytime">
+                    <img alt="Cancel Anytime: No commitment" src="img/commitment.png">
+                    <h2>No Commitments<br/>Cancel online at anytime</h2>
                 </a>
-                <a  class="column" data-id="watchanywhere">
-                    <img alt="WATCH ANYWHERE" src="img/watch.png">
-                    <h2>
-                        Watch Anywhere
-                
-                    </h2>
+    
+                <a href="#" class="column" data-id="watchanywhere">
+                    <img alt="Watch Anywhere: Personalized viewing experience" src="img/watch.png">
+                    <h2>Watch Anywhere</h2>
                 </a>
-                <a class="column" data-id="pickprice">
-                    <img alt="PICK YOUR PRICE" src="img/price.png">
-                    <h2>
-                        Pick Your Price
-                    </h2>
+    
+                <a href="#" class="column" data-id="pickprice">
+                    <img alt="Pick Your Price: Choose the plan that fits your budget" src="img/price.png">
+                    <h2>Pick Your Price</h2>
                 </a>
             </div>
-            <article>
-                
-            </article>
         </nav>
+    
+        <article>
+            <section class="is-selected center size-70" data-id="cancelanytime">
+                <div class="columns">
+                    <div class="column">
+                        <h2>If you decide Netflix isn't for you – no problem. No commitment. Cancel online anytime.</h2>
+                        <button class="btn btn-large">JOIN FOR A FREE MONTH</button>
+                    </div>
+                    <div class="column">
+                        <img src="img/cancelanytime_withdevice.png" alt="Cancel anytime on any device"/>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="center size-80" id="watchanywhere" data-id="watchanywhere">
+                <div class="columns">
+                    <div class="column">
+                       <h2> Watch TV shows and movies anytime, anywhere - personalized just for you.</h2>
+                    </div>
+                    <button class="btn btn-large column is-narrow">JOIN FOR A FREE MONTH</button>
+                </div>
+                <div class="columns size-90 center">
+                    <div class="column text-center">
+                        <img src="img/watch_TV.png" alt="Watch on your TV"/>
+                        <h3>Watch on your TV</h3>
+                        <p>Smart TVs, PlayStation, Xbox, Chromecast, Apple TV and more</p>
+                    </div>
+                    <div class="column text-center">
+                        <img src="img/watch_mobile.png" alt="Watch on your TV"/>
+                        <h3>Watch  instantly or download for later</h3>
+                        <p>Available on phone and tablet ,whereever you go</p>
+                    </div>
+                    <div class="column text-center">
+                        <img src="img/use_computer.png" alt="Watch on your TV"/>
+                        <h3>Use any computer</h3>
+                        <p>Watch right on Netflix.com.</p>
+                    </div>
+                </div>
+            </section>
+    
+            <section data-id="pickprice" class="center size-70" id="pickprice">
+                <div class="text-center">
+                    <h2>
+                        Choose plan and watch everything on Netflix.
+                    </h2>
+                    <button class="btn btn-large">JOIN FOR A FREE MONTH</button>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Basic</th>
+                            <th>Standard</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Monthly price after free month ends .</td>
+                            <td>INR7.99</td>
+                            <td>INR9.99</td>
+                            <td>INR10.99</td>
+                        </tr>
+                        <tr>
+                            <td>HD available</td>
+                            <td><i class="fa fa-times"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Ultra HD available</td>
+                            <td><i class="fa fa-times"></i></td>
+                            <td><i class="fa fa-times"></i></td>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
     </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
